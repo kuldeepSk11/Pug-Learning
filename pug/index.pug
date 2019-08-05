@@ -1,0 +1,41 @@
+doctype html
+html
+	head
+		title pug leanign
+		link(rel="stylesheet" href="css/style.css")
+		style.
+			p{
+				margin:0px;
+				padding:0px;
+			}
+			#wraper{
+				width:100%;
+				margin:0px auto;
+				border:1px #dcdcdc solid;
+			}
+	body
+        include include/header
+		div#wraper
+			h1.heading hello world
+			p.
+				this is only for leaning tag
+				and this is only for leaning tag
+			input(type="password" name="" value="" placeholder="password")
+			input(type="type" dat-js='${ 5 > 3 ? "ok" :"not ok" }')
+			
+			- const myClass = ['class1','class2','class3','class4']
+			
+			div(class=myClass) adding multiple class arrey
+			div.myDivSet(class=myClass) add one more class
+			
+			- const myStyle = {"color":"white","background":"blue"}
+			
+			div(style=myStyle) adding multiple style object
+			
+			- const imagesAttr = {"src":"image/myphoto.jpg","alt":"testing"}
+			
+			img&attributes(imagesAttr)
+            
+            input(type="text" disabled="false")
+            
+            include include/footer

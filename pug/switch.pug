@@ -1,0 +1,16 @@
+doctype
+html
+    head
+        titile
+    body
+        //orderStatus = > pedding || In_Transit || Complete
+        - const orderStatus = "pedding"
+        
+        case orderStatus
+            when 'peddning'
+                p your order has been placed and will be send sortly
+            when 'In_Transit'
+                p your order is on the move - you should recive it soon!
+            when 'Complete'
+                p your order has complete
+                

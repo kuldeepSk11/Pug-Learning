@@ -1,0 +1,21 @@
+doctype
+html
+    head
+    body
+        h1 For/Each Loop
+
+        each n in ['1','2','3','4','5']
+            p=n
+
+        - const names = ['kuldeep','rahul','sunny','panjak'];
+        each n, i in names
+            p= n + '__' + i
+
+        - const grades = {name:'kuldeep',Age:27};
+        for n, i in grades
+            p= n + '__' + i 
+
+        for n, i in []
+            p= n + '__' + i 
+        else
+            strong no values!
